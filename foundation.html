@@ -1,38 +1,145 @@
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
-    <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foundation for Sites</title>
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-    <div class="grid-container">
-        <div class="grid-x grid-padding-x">
-            <div class="large-12 cell">
-                <h1>Interesting foundation stuff</h1>
-                <div class="primary callout">
-                    Here's what foundation is
-                </div>
-            </div>
+  
+  <!-- foundation nav bar -->
+  <div class="top-bar foundation-5-top-bar">
+    <div class="top-bar-title">
+      <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
+	<button class="menu-icon" type="button" data-toggle></button>
+      </span>
+      <strong>Foundation Framework</strong>
+    </div>
+    <div id="responsive-menu">
+      <div class="top-bar-left">
+	<ul class="dropdown vertical medium-horizontal menu" data-responsive-menu="drilldown medium-dropdown" data-auto-height="true" data-animate-height="true">
+          <li>
+            <a href="#twelve_cell">Interesting Stuff</a>
+            <ul class="menu">
+              <li><a href="#callout">What foundation is</a></li>
+              <li><a href="#">Two</a></li>
+              <li>
+		<a href="#kits">Building Block Kits</a>
+		<ul class="menu">
+                  <li><a href="#blog">Blog Kit</a></li>
+                  <li><a href="#dash">Dashboard Kit</a></li>
+                  <li>
+                    <a href="#news">News/Magazine Kit</a>
+                    <ul class="menu">
+                      <li><a href="#">One</a></li>
+                      <li><a href="#">Two</a></li>
+                      <li><a href="#">Three</a></li>
+                    </ul>
+                  </li>
+		</ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">Two</a></li>
+          <li><a href="#">Three</a></li>
+	</ul>
+      </div>
+      <div class="top-bar-right">
+	<ul class="menu">
+          <li><input type="search" placeholder="Search"></li>
+          <li><button type="button" class="button">Search</button></li>
+	</ul>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="grid-container">
+    <div class="grid-x grid-padding-x">
+      <div class="large-12 cell" id="twelve_cell">
+        <h1>Interesting foundation stuff</h1>
+        <div class="primary callout" id="callout">
+          Here's what <a href="http://foundation.zurb.com">foundation</a> is
         </div>
-        <div class="grid-x grid-padding-x">
-            <div class="large-3 medium-3 cell"></div>
-            <div class="large-6 medium-6 cell">
-                <div class="">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-            </div>
-            <div class="large-3 medium-3 cell"></div>
+      </div>
+    </div>
+    <div class="grid-x grid-padding-x">
+      <div class="large-3 medium-3 cell"></div>
+      <div class="large-6 medium-6 cell">
+        <div class="">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
+      </div>
+      <div class="large-3 medium-3 cell"></div>
+    </div>   
+  </div>
+
+
+  <!-- Information Displaying -->
+  <div class="article-row-section">
+    <div class="article-row-section-inner">
+      
+      <h2 class="article-row-section-header" id="kits">Foundation Building Blocks Kits</h2>
+      
+      <a href="https://foundation.zurb.com/building-blocks/kits/blog.html">
+	<article class="article-row">
+          <div class="article-row-img">
+            <img src="https://foundation.zurb.com/building-blocks/assets/img/kits/blog/blog-kit.jpg" alt="picture of a whale eating a donkey" style="width:200px;height:200px;" />
+          </div>
+          <div class="article-row-content">
+            <h1 class="article-row-content-header" id="blog">Blog Kit</h1>
+	    
+            <p class="article-row-content-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quia sit ullam, assumenda et. est at. Minima cum enim, vero eligendi perspiciatis similique modi voluptatem officia fugiat. &copy; foundation.zurb.com </p>
+	    
+            <p class="article-row-content-author">By Yeti</p>
+            <time class="article-row-content-time" datetime="2008-02-14 20:00">July 14th 2021</time>
+          </div>
+	</article>
+      </a>
+      
+      <a href="https://foundation.zurb.com/building-blocks/kits/dashboard.html">
+	<article class="article-row article-row-reversed">
+          <div class="article-row-img">
+            <img src="https://placehold.it/200" alt="picture of a whale eating a donkey" />
+          </div>
+          <div class="article-row-content">
+            <h1 class="article-row-content-header" id="dash">Dashboard Kit</h1>
+	    
+            <p class="article-row-content-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore accusamus sint quas, odit, enim architecto officiis culpa!</p>
+	    
+            <p class="article-row-content-author">By Yeti</p>
+            <time class="article-row-content-time" datetime="2008-02-14 20:00">July 14th 2021</time>
+          </div>
+	</article>
+      </a>
+
+      <a href="https://foundation.zurb.com/building-blocks/kits/news.html">
+	<article class="article-row">
+          <div class="article-row-img">
+            <img src="https://placehold.it/200" alt="picture of a whale eating a donkey" />
+          </div>
+          <div class="article-row-content">
+            <h1 class="article-row-content-header" id="news">News/Magazine Kit</h1>
+
+            <p class="article-row-content-description">Lorem ipsum dolor sit amet, consectetur cupiditate, unde libero quisquam ipsam debitis earum omnis aperiam nulla eaque vitae error optio tempora voluptatem, quae impedit laborum placeat. Expedita!</p>
+	    
+          <p class="article-row-content-author">By Yeti</p>
+          <time class="article-row-content-time" datetime="2008-02-14 20:00">July 14th 2021</time>
+          </div>
+	</article>
+      </a>
 
     </div>
-
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
+  </div>
+  
+  
+  
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
